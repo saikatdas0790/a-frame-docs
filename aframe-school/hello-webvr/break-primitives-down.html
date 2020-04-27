@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello, WebVR! - A-Frame</title>
+    <script src="https://unpkg.com/aframe@^1.0.4"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-entity
+        id="box"
+        geometry="primitive: box; width: 1; depth: 1; height: 1"
+        position="-1 0.5 -3"
+        rotation="0 45 0"
+        material="color: #4CC3D9"
+      ></a-entity>
+      <a-entity
+        id="sphere"
+        geometry="primitive: sphere; radius: 1.25"
+        material="color: #EF2D5E"
+        position="0 1.25 -5"
+      ></a-entity>
+      <a-entity
+        id="cylinder"
+        geometry="primitive: cylinder; radius: 0.5; height: 1.5"
+        position="1 0.75 -3"
+        material="color: #FFC65D"
+      ></a-entity>
+      <a-entity
+        id="plane"
+        position="0 0 -4"
+        rotation="-90 0 0"
+        geometry="primitive: plane; width: 4; height: 4"
+        material="color: #7BC8A4"
+      ></a-entity>
+      <a-entity
+        id="sky"
+        geometry="primitive: sphere; radius: 100"
+        material="color: #ECECEC; shader: flat; side: back"
+      ></a-entity>
+    </a-scene>
+  </body>
+</html>
